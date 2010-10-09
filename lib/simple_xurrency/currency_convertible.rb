@@ -89,7 +89,7 @@ module CurrencyConvertible
 
       api_url = "http://xurrency.com/api/#{[original, target].join('/')}/1"
       
-      api_url << "?key=#{SimpleXurrency.xurrency_key}" if SimpleXurrency.xurrency_key
+      api_url << "?key=#{SimpleXurrency.key}" if !SimpleXurrency.key.nil?
       
       uri = URI.parse(api_url)
 

@@ -1,7 +1,6 @@
-= simple_currency
+= simple_xurrency
 
-A really simple currency converter using Xurrency and XavierMedia APIs.
-Compatible with Ruby 1.8, 1.9 and JRuby.
+A really easy interface to the Xurrency API. It's Ruby 1.8, 1.9 and JRuby compatible. This gem is a fork from simple_currency, made by Codegram.
 
 == Usage
 
@@ -14,20 +13,15 @@ Just require it and all your numeric stuff gets this fancy DSL for free:
   # => 190.4
   239.usd.to_eur
   # => 187.98 
-  # These don't even hit the Internets!
-  # (They take advantage of Rails cache)
+  
+  1.eur.to_usd_updated_at
+  # => Fri Oct 08 22:54:00 UTC 2010
+  
+If you have a Xurrency API key, you can add it by doing:
 
-  70.usd.to_chf
-  # => 71.9
-
-But what if you want to do the currency exchange according to a specific date
-in the past? Just do this:
-
-  # You can use any time or date object
-  42.eur.at(1.year.ago).to_usd
-  # => 60.12
-  42.eur.at(Time.parse('2009-09-01')).to_usd
-  # => 60.12
+  SimpleXurrency.key = 'write_your_api_key'
+  
+If you want to find out how to adquire an API key, please go to http://xurrency.com/license
 
 == Installation
 
@@ -35,29 +29,18 @@ in the past? Just do this:
 
 In your Gemfile:
 
-  gem "simple_currency"
+  gem "simple_xurrency"
 
 === Not using Rails?
 
 Then you have to manually install the gem:
 
-  gem install simple_currency
+  gem install simple_xurrency
 
 And manually require it as well:
 
-  require "simple_currency"
+  require "simple_xurrency"
 
-== Note on Patches/Pull Requests
- 
-* Fork the project.
-* Make your feature addition or bug fix.
-* Add specs for it. This is important so I don't break it in a
-  future version unintentionally.
-* Commit, do not mess with rakefile, version, or history.
-  If you want to have your own version, that is fine but bump version
-  in a commit by itself I can ignore when I pull.
-* Send me a pull request. Bonus points for topic branches.
+== License
 
-== Copyright
-
-Copyright (c) 2010 Codegram. See LICENSE for details.
+See LICENSE for details.

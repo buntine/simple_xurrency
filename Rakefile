@@ -5,19 +5,18 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "simple_currency"
-    gem.summary = "A really simple currency converter using the Xurrency and XavierMedia APIs."
-    gem.description = "A really simple currency converter using the Xurrency and XavierMedia APIs. It's Ruby 1.8, 1.9 and JRuby compatible, and it also takes advantage of Rails cache when available."
-    gem.email = "info@codegram.com"
-    gem.homepage = "http://github.com/codegram/simple_currency"
-    gem.authors = ["Oriol Gual", "Josep M. Bach", "Josep Jaume Rey"]
+    gem.name = "simple_xurrency"
+    gem.summary = "A really easy interface to the Xurrency API"
+    gem.description = "A really easy interface to the Xurrency API. It's Ruby 1.8, 1.9 and JRuby compatible"
+    gem.email = "yo@alfonsojimenez.com"
+    gem.homepage = "http://github.com/alfonsojimenez/simple_xurrency"
+    gem.authors = ["Oriol Gual", "Josep M. Bach", "Josep Jaume Rey", "Alfonso Jimenez"]
 
     gem.add_dependency 'crack', ">= 0.1.8"
 
     gem.add_development_dependency "jeweler", '>= 1.4.0'
     gem.add_development_dependency "rspec", '>= 2.0.0.beta.20'
     gem.add_development_dependency "fakeweb", '>= 1.3.0'
-    gem.add_development_dependency "rails", '>= 3.0.0'
     gem.add_development_dependency "bundler", '>= 1.0.0'
   end
   Jeweler::GemcutterTasks.new

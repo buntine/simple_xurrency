@@ -3,7 +3,7 @@ require 'core_ext/numeric'
 
 class SimpleXurrency
   class << self
-    attr_accessor :xurrency_key
+    attr_accessor :key
     
     def cache_enabled?
       if @cache_enabled.nil?
