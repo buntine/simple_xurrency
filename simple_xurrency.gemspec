@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Oriol Gual", "Josep M. Bach", "Josep Jaume Rey", "Alfonso Jimenez"]
-  s.date = %q{2010-10-08}
+  s.date = %q{2010-10-16}
   s.description = %q{A really easy interface to the Xurrency API. It's Ruby 1.8, 1.9 and JRuby compatible}
   s.email = %q{yo@alfonsojimenez.com}
   s.extra_rdoc_files = [
@@ -30,8 +30,11 @@ Gem::Specification.new do |s|
      "VERSION",
      "autotest/discover.rb",
      "lib/core_ext/numeric.rb",
-     "spec/spec_helper.rb",
-     "spec/support/xavier.xml"
+     "lib/simple_xurrency.rb",
+     "lib/simple_xurrency/currency_convertible.rb",
+     "simple_xurrency.gemspec",
+     "spec/simple_xurrency_spec.rb",
+     "spec/spec_helper.rb"
   ]
   s.homepage = %q{http://github.com/alfonsojimenez/simple_xurrency}
   s.rdoc_options = ["--charset=UTF-8"]
