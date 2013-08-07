@@ -13,6 +13,10 @@ Just require it and all your numeric stuff gets this fancy DSL for free:
   # => 190.4
   239.usd.to_eur
   # => 187.98 
+
+  # Historical rates:
+  239.usd.to_eur(Date.today - 2)
+  # => 183.98 
   
   1.eur.to_usd_updated_at
   # => Fri Oct 08 22:54:00 UTC 2010
