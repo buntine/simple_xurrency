@@ -33,13 +33,13 @@ If you want to find out how to adquire an API key, please go to http://xurrency.
 
 In your Gemfile:
 
-  gem "simple_xurrency"
+  gem "simple_xurrency_buntine"
 
 === Not using Rails?
 
 Then you have to manually install the gem:
 
-  gem install simple_xurrency
+  gem install simple_xurrency_buntine
 
 And manually require it as well:
 
