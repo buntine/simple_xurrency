@@ -5,12 +5,12 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "simple_xurrency"
+    gem.name = "simple_xurrency_buntine"
     gem.summary = "A really easy interface to the Xurrency API"
-    gem.description = "A really easy interface to the Xurrency API. It's Ruby 1.8, 1.9 and JRuby compatible"
-    gem.email = "yo@alfonsojimenez.com"
-    gem.homepage = "http://github.com/alfonsojimenez/simple_xurrency"
-    gem.authors = ["Oriol Gual", "Josep M. Bach", "Josep Jaume Rey", "Alfonso Jimenez"]
+    gem.description = "A really easy interface to the Xurrency API. It's Ruby 1.8, 1.9 and JRuby compatible and has supoort for historical rates"
+    gem.email = "info@andrewbuntine.com"
+    gem.homepage = "http://github.com/buntine/simple_xurrency"
+    gem.authors = ["Oriol Gual", "Josep M. Bach", "Josep Jaume Rey", "Alfonso Jimenez", "Andrew Buntine"]
 
     gem.add_dependency 'crack', ">= 0.1.8"
 
