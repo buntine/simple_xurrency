@@ -38,6 +38,14 @@ describe "SimpleXurrency" do
       end
     end
 
+    it "returns a historical converted amount from one currency to another" do
+      amount = 2
+      rate = 1.4874
+      
+      mock_xurrency_api('aud', 'usd', amount, rate, Time.now.utc, {}, Date.today - 1)
+      amount.aud.to_usd(Date.today - 1).should == amount*rate
+    end
+
     it "raises any error returned by the api call" do
       mock_xurrency_api('usd', 'xxx', 1, 1.5, Time.now.utc, :fail_with => "Currencies are not valid")
       mock_xurrency_api('usd', 'eur', 1_000_000_000, 1.5, Time.now.utc)
